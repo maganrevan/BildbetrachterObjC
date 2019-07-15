@@ -10,6 +10,17 @@
 
 @interface ViewController : NSViewController
 
+//outlets
+@property (weak) IBOutlet NSTextField *textFieldPath;
+@property (weak) IBOutlet NSImageView *imageViewDisplay;
+
+//actions
+- (IBAction)btnCloseClicked:(id)sender;
+- (IBAction)btnOpenClicked:(id)sender;
+- (IBAction)btnChooseClicked:(id)sender;
+
+//own
+- (void)modalStack:(NSString*)headline body:(NSString*)content;
 
 @end
 
